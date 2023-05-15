@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinh_nen_mau_xam_cho_dien_thoai"
+    android:orientation="vertical"
+    tools:context=".UI.Feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về"
+            app:icon="@drawable/baseline_keyboard_backspace_24"
+            android:onClick="goBackToHome"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="277dp"
+            android:layout_height="46dp"
+            android:text="Nội dung đóng góp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/rvDonggop"
+        android:layout_width="match_parent"
+        android:layout_height="547dp" />
+
+    <EditText
+        android:id="@+id/editTextTextNoidung"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Nội dung góp ý"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/buttondlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Xóa" />
+
+        <Button
+            android:id="@+id/buttonedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Sửa" />
+    </LinearLayout>
+</LinearLayout>
